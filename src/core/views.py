@@ -8,5 +8,5 @@ def index(request):
     return HttpResponse("Hello, world!")
 
 @login_required
-def my_view(request):
+def protected_view(request):
     return HttpResponse("Hello, world, but authenticated!")
